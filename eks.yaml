@@ -10,5 +10,8 @@ managedNodeGroups:
     instanceType: m5.large
     spot: true
     desiredCapacity: 3
+    # created to practice EBS static provisioning
+    availabilityZones:
+      - ap-south-1a
     ssh:
       publicKeyName: kubernetes
