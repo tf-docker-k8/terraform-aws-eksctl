@@ -66,4 +66,9 @@ VALIDATE $? "moved eksctl to bin folder"
 
 VALIDATE $? "AWS CLI v2 Installation"
 
+git clone https://github.com/ahmetb/kubectx /opt/kubectx
+ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+
+VALIDATE $? "kubens Installation"
+
 echo  -e "$R You need logout and login to the server $N"
