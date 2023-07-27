@@ -8,6 +8,7 @@ metadata:
 managedNodeGroups:
   - name: spot
     instanceType: m5.large
+    # your K8 node can be anytime taken back by AWS
     spot: true
     desiredCapacity: 3
     # created to practice EBS static provisioning
